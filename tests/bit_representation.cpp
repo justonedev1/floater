@@ -2,9 +2,11 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch_test_macros.hpp>
 
-#include <floater/bit_representation.hpp>
+#include <floater/bit_representation/uinteger.hpp>
 
-using sizet = floater::uinteger<sizeof(size_t)>;
+using bla = floater::bit_representation::uinteger<8>;
+
+using sizet = floater::bit_representation::uinteger<sizeof(size_t)>;
 
 TEST_CASE("addition", "[bit_representation]") {
   REQUIRE((sizet(1) + sizet(2) == sizet(3)));

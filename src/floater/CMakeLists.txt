@@ -1,0 +1,4 @@
+add_subdirectory(bit_representation)
+
+add_library(floater INTERFACE)
+target_link_libraries(floater INTERFACE bit_representation)

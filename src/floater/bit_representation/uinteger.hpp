@@ -4,7 +4,7 @@
 #include <bitset>
 #include <cstring>
 
-namespace floater {
+namespace floater::bit_representation {
 
 template <size_t WIDTH> struct uinteger {
   std::bitset<WIDTH> buffer;
@@ -40,6 +40,6 @@ template <size_t WIDTH> struct uinteger {
   bool operator<=>(const uinteger &other) const noexcept = default;
 };
 
-} // namespace floater
+} // namespace floater::bit_representation
 
 #endif // INCLUDEsrcbit_representationbit_representation.hpp_

@@ -1,10 +1,6 @@
-add_library(floater INTERFACE)
 
+add_subdirectory(floater)
 
-target_sources(floater INTERFACE
-  floater/bit_representation.hpp
-)
-
-target_include_directories(floater INTERFACE
+target_include_directories(bit_representation INTERFACE
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
